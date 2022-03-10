@@ -1,0 +1,90 @@
+@import "../../assets/scss/_var";
+
+.layout {
+  min-height: 100vh !important;
+  overflow-x: hidden;
+
+  .sidebar {
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 68px;
+
+    .ant-menu {
+      .ant-menu-item {
+        svg {
+          color: $mainColor;
+        }
+
+        &.ant-menu-item-selected,
+        &:hover {
+          background-color: $backColor;
+
+          a,
+          svg {
+            color: #000;
+          }
+
+          &::after {
+            border-color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+  }
+
+  .site-layout {
+    .site-page-header {
+      background: #fff;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 2;
+
+      .ant-page-header-heading {
+        .ant-page-header-heading-left {
+          .ant-page-header-heading-title {
+            color: $mainColor;
+          }
+        }
+
+        .ant-avatar {
+          background-color: $mainColor;
+        }
+      }
+
+      button {
+        display: flex;
+        height: auto;
+        padding: 0 15px;
+
+        strong {
+          margin: auto 0.5rem;
+        }
+      }
+    }
+
+    .ant-layout {
+      margin: 64px 0 0 200px;
+
+      main {
+        margin: 24px 16px 0;
+      }
+
+      footer {
+        text-align: center;
+        background: #fff;
+        margin-top: 0.5rem;
+        padding: 1rem 50px;
+        height: auto;
+      }
+    }
+  }
+}

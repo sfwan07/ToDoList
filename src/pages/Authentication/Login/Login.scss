@@ -1,0 +1,57 @@
+@import "../../../assets/scss/_var";
+
+.login {
+  height: 100vh;
+  background-color: $backColor;
+
+  .ant-image {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .form-login {
+    height: 100vh;
+    display: flex;
+    background: rgb(255 255 255 / 70%);
+
+    form {
+      width: 300px;
+      padding: 1rem;
+      margin: auto;
+
+      h1 {
+        color: $mainColor;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        color: $mainColor;
+        text-align: center;
+      }
+
+      .ant-row.ant-form-item {
+        .ant-form-item-control {
+          margin: auto;
+
+          button {
+            width: 100%;
+            border-color: $mainColor;
+            color: $mainColor;
+
+            &:hover {
+              background-color: $mainColor;
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .note {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@import "./../../assets/scss/_var";
+
+.groups {
+  .btn-add-group {
+    margin: 0.5rem 0;
+    border-color: $mainColor;
+    color: $mainColor;
+
+    &:hover {
+      background-color: $mainColor;
+      color: #fff;
+    }
+  }
+
+  .site-tag-plus.pointer {
+    border-color: $mainColor;
+    color: $mainColor;
+
+    &:hover {
+      border-color: $mainColor;
+      background-color: $mainColor;
+      color: #fff;
+    }
+  }
+
+  .site-tag-mins.pointer {
+    &:hover {
+      border-color: $dangerColor;
+      background-color: $dangerColor;
+      color: #fff;
+    }
+  }
+}
+
+.ant-drawer-body {
+  .form-group {
+    h2 {
+      color: $mainColor;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    input {
+      color: $mainColor;
+      text-align: center;
+    }
+
+    .btn-form {
+      width: 100%;
+
+      .ant-form-item-control {
+        margin: auto;
+
+        .ant-form-item-control-input-content {
+          display: flex;
+          justify-content: center;
+
+          button {
+            width: 200px;
+            margin: auto 0.5rem;
+
+            &.reset:hover {
+              background-color: $dangerColor;
+            }
+
+            &.send {
+              border-color: $mainColor;
+              color: $mainColor;
+
+              &:hover {
+                background-color: $mainColor;
+              }
+            }
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
